@@ -1,0 +1,103 @@
+.logo {
+  width: 60px;
+  height: 50px;
+}
+
+.navbar-collapse {
+  margin-left: 120px;
+}
+
+.nav-link {
+  color: #000;
+  font-size: 18px;
+  margin-left: 34px;
+  position: relative;
+}
+
+.active {
+  color: #62070D !important;
+}
+
+.nav-link:hover,
+.nav-link:hover::after {
+  visibility: visible;
+  color: #62070D;
+  transition: ease-in all;
+  -webkit-transition: ease-in all;
+  -moz-transition: ease-in all;
+  -ms-transition: ease-in all;
+  -o-transition: ease-in all;
+}
+
+.nav-link::after {
+  content: "";
+  top: 30px;
+  margin-top: 5px;
+  right: 50%;
+  width: 7px;
+  height: 7px;
+  background-color: #62070D;
+  position: absolute;
+  visibility: hidden;
+}
+
+.nav-link.active::after {
+  visibility: visible;
+  color: #62070D;
+}
+
+/* satrt section landing */
+.landing {
+  background-color: #62070D;
+  color: aliceblue;
+  height: 280px;
+  background-image: url("https://techgates.net/wp-content/uploads/2020/12/page_title_elements.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center bottom;
+  position: relative; /* remove transform-related properties */
+}
+
+.landing:hover {
+  background-position: right top; /* change background position on hover */
+}
+.landing h1 {
+  padding-top: 110px;
+  padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+  }
+  .about {
+    display: block;
+  }
+  .about img {
+    width: 220px;
+  }
+}
+h2{
+  color: #62070D;
+}
+.about h3{
+  font-size: 22px;
+  color: #62070D;
+}
+.about p{
+  color:#c6c6c6;
+  line-height: 30px;
+}
+.specit{
+  font-weight: 400;
+  color: #000 !important;
+  font-size: 24px;
+}
+.about2{
+  background-color: #e6e6e6;
+}
+.about2 p{
+  color: #000;
+  font-weight: 300;
+}
